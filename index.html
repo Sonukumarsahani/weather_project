@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>weader panel</title>
+  <style>
+    *{
+      padding:0px;
+      margin:0px;
+      box-sizing: border-box;
+    }
+    form{
+     width:100%;
+     height:auto;
+     background-image:url("/Practice /@media/Responsive /image_of_background.jpg");
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .card{
+      width:90%;
+      height:70%;
+      margin: 20px;
+      background-color:rgba(0,0,0,0.5);
+      padding: 10px 50px;
+      border-radius: 20px;
+      
+    }
+    .first{
+      max-width:100%;
+      
+      margin-top: 10px;
+    }
+    .first h1{
+      width:100%;
+      text-align: center;
+      margin-top: 18px;
+      font-size: 70px;
+      color:orange;
+    }
+    .first p{
+      width:100%;
+      text-align: center;
+      margin-bottom:4px;
+      font-size: 20px;
+      color:white;
+    }
+    .second{
+      max-width:100%;
+     /* padding:40px 50px 20px 50px;*/
+      margin-top:15px;
+     
+      display:flex;
+      gap:10px
+     
+    }
+    .search {
+      width:30%;
+      height:70px;
+      background-color: orange;
+      border-radius:50px;
+      box-shadow: 0px 5px 3px darkorange;
+      cursor: pointer;
+    }
+    .search:hover{
+      
+      
+      background-color:darkorange;
+    }
+    .search p{
+      font-size: 40px;
+      padding: 12px 35px;
+      color:white;
+    }
+    input{
+      width:100%;
+      height:70px;
+      border-radius:50px;
+      
+      background-color:rgba(255,255,255,0.8);
+      outline:none;
+      font-size: 32px;
+      color:white;
+      
+    }
+    .third{
+      margin-top:15px;
+      display:flex;
+     background-color: rgba(0,0,0,0.5);
+      height:135px;
+      width:100%;
+      padding-left: 70px;
+      align-items: center;
+      gap: 90px;
+      border-radius: 20px;
+      
+    }
+    .gola{
+      width:52px;height:52px;
+      border:1px solid black;
+      border-radius: 52px;
+      background-color: palevioletred;
+      
+    }
+    .third h1{
+      color:orange;
+      font-size:40px;
+      font-weight: bold;
+    }
+      .third p{
+      
+      font-size:20px;
+      
+    }
+  .fourth
+    {
+      
+      max-width: 100%;
+      height:215px;
+      
+      margin-top: 15px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      gap:50px;
+      padding-bottom: 0px;
+    }
+    .fourth_item{
+      width:22%;
+      height:185px;
+      border-radius: 22px;
+    
+      background-color: rgba(0,0,0,0.2);
+    }
+    
+    .introduction{
+      
+      height:185px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:20px;
+    }
+    .in_image{
+      width:48px;height:48px;
+      
+    }
+    .introduction div img{
+      width:50px;height:50px;
+    }
+    #temp{
+      color:white;
+    }
+    .day{
+      color:orange;
+    }
+    #round_image{
+      border-radius: 40px;
+      background-color: palevioletred;
+    }
+    
+    
+    @media only screen and (min-width:200px) and (max-width:575px)
+    
+     
+   
+  {
+       .card{
+      width:95%;
+      height:auto;
+      margin:px;
+      background-color:rgba(0,0,0,0.5);
+    }
+      .first h1{
+      width:100%;
+      text-align: center;
+      margin-top: 22px;
+      font-size: 38px;
+      color: orange;
+    }
+        .second{
+      max-width:100%;
+     /* padding:40px 50px 20px 50px;*/
+      margin-top:15px;
+     
+      display:flex;
+      flex-direction: column;
+      gap:30px;
+      
+    }
+    .search {
+      width:70%;
+      height:50px;
+      background-color:orange;
+      margin-left: 35px;
+    }
+    .search p{
+      font-size: 30px;
+      padding: 6px 35px;
+      color:white;
+    }
+   input{
+      width:100%;
+      height:70px;
+      background-color: rgba(2,0,0.3,0.5);
+    }
+    
+    .third{
+      border:1px solid black;
+      height:80px;
+      width:100%;
+    }
+        .gola{
+          position:absolute;
+          left:100px;
+      width:25px;height:25px;
+      border:1px solid black;
+      
+    }
+        .third p{
+      font-size: 13px;
+      position:relative;
+          left:px;
+    }
+    .third h2{
+      font-size: 25px;
+       position:relative;
+       left:20px;
+    }
+    
+   .fourth
+    {
+      width: 100%;
+      height:auto;
+     
+      margin-top:15px;
+      
+     
+      
+    
+      gap:12px;
+      padding-bottom:1px;
+      display :flex;
+      flex-direction: column;
+     
+    }
+   .fourth_item{
+      width:100%;
+      height:200px;
+     
+      
+      
+    }
+    
+    
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    
+  
+  <div class="card">
+    <div class="first">
+      <h1>Weather Explorer</h1>
+      <p>Stay updated width the latest weather conditions</p>
+      
+    </div>
+    <div class="second">
+      <input type="text"placeholder="Calabar"/>
+      <div class="search">
+        <p>Search</p>
+      </div>
+    </div>  
+      
+      <div class="third">
+        <div class="gola"></div>
+        <div class="calabar">
+        <h1>Calabar</h1>
+        <p>Temperature: 35.09⁰C <br />clear sky</p>
+        </div>
+      </div>
+      
+      
+      <div class="fourth">
+        <div id="Saturday"class="fourth_item">
+          <div class="introduction">
+            <h1 class="day">Saturday</h1>
+            <div id="round_image" class="in_image">
+            </div>
+              <h1 id="temp">34⁰C</h1>
+              
+            
+            
+          </div>
+        </div>
+          
+        <div id="Sunday"class="fourth_item">
+          
+            <div class="introduction">
+            <h1 class="day">Sunday</h1>
+            <div class="in_image">
+              <img src="/Practice /@media/Responsive /First.png" >
+            </div>
+              <h1 id="temp">32⁰C</h1>
+              
+            
+            
+          </div>
+          
+        </div>
+        <div id="Monday"class="fourth_item">
+          
+  <div class="introduction">
+    <h1 class="day">Monday</h1>
+    <div class="in_image">
+       <img src="/Practice /@media/Responsive /second_cloud.png" >
+    </div>
+    <h1 id="temp">30⁰C</h1>
+    
+    
+    
+  </div>
+          
+        </div>
+        <div id="Tuesday"class="fourth_item">
+          
+  <div class="introduction">
+    <h1 class="day">Tuesday</h1>
+    <div class="in_image">
+<img src="/Practice /@media/Responsive /last_cloud.png" >
+      
+    </div>
+    <h1 id="temp">31⁰C</h1>
+    
+    
+    
+  </div>
+          
+        </div>
+        
+      </div>
+      
+      
+      
+    </div>
+    
+  </div>
+  </form>
+</body>
+
+</html>
+    
